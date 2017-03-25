@@ -1,0 +1,46 @@
+$def with(page)
+<html lang="en">
+<head>
+    <title>Acme Store</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../static/css/bootstrap.css" media="screen" rel="stylesheet">
+</head>
+<body>
+
+<style>
+        #menu {
+            width: 200px;
+            float: right;
+        }
+    </style>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/">Acme Store</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="/">Inicio</a></li>
+      <li><a href="/new">Nuevo Producto</a></li>
+      <li><a href="/edit">Editar Producto</a></li>
+      <li><a href="#"></a></li>
+    </ul>
+  </div>
+</nav>
+
+<div>
+    
+    <ul id="menu">
+    <li><a href="/">Inicio</a></li>
+    <li><a href="/new">Nuevo Producto</a></li>
+    </ul>
+
+$:page
+
+</div>
+
+</body>
+</html>
